@@ -1,0 +1,25 @@
+<section>
+    @for (post of posts; track $index) {
+    <article>
+        <h2>{{ post.titulo }}</h2>
+        <img [src]="post.imagen" alt="{{ post.titulo }}">
+        <p>{{ post.texto }}</p>
+        <p>Autor: {{ post.autor }}</p>
+        <p>Fecha: {{ post.fecha}}</p>
+        <p>Categoría: {{ post.categoria }}</p>
+    </article>
+    }
+</section>
+
+<section>
+    @for (cat of categories; track $index) {
+    <button (click)="filterByCategory(cat)">
+        {{ cat }}
+    </button>
+    }
+</section>
+<section>
+    <a [routerLink]="['/new']" class="btn btn-primary btn-lg">
+        Ir al formulario
+    </a>
+</section>

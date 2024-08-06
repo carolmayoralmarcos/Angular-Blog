@@ -1,0 +1,82 @@
+.text-magenta {
+    color: #ff00ff;
+}
+
+.border-magenta {
+    border-color: #ff00ff !important;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 6px 12px rgba(255, 0, 255, 0.4);
+}
+
+section article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.2);
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 0, 255, 0.5);
+}
+
+section article h2 {
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #800080;
+}
+
+section article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+section article p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+section button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section button:hover {
+    background-color: #e03e00;
+    transform: translateY(-2px);
+}
+
+section a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    background-color: #008080;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section a.btn:hover {
+    background-color: #007373;
+    transform: translateY(-2px);
+}
